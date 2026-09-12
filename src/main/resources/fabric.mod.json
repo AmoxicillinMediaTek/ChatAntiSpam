@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "chatantispam",
+  "version": "${version}",
+  "name": "Chat Anti-Spam",
+  "description": "Combines consecutive duplicate player chat messages into one line.",
+  "authors": [
+    "AmoxicillinMediaTek"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.amoxicilliamediatek.chatantispam.ChatAntiSpamClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "chatantispam.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.2",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
